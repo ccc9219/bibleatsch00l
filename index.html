@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible at School</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            background-color: #f0f8ff; /* Light background color */
+            overflow: hidden; /* Prevent scrollbars */
+        }
+
+        h1 {
+            font-size: 48px; /* Large title size */
+            margin-bottom: 50px; /* Space between title and button */
+            text-align: center;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            border: none;
+            border-radius: 5px;
+            position: relative;
+            z-index: 1; /* Ensure button is above crosses */
+        }
+
+        .cross {
+            position: absolute;
+            width: 30px; /* Width of the cross */
+            height: 30px; /* Height of the cross */
+            background-color: transparent; /* Transparent background */
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="red"><path d="M12 2v20M2 12h20" /></svg>'); /* Cross SVG */
+            background-size: contain; /* Scale the SVG */
+            background-repeat: no-repeat; /* Prevent repeating */
+            z-index: 0; /* Behind the button and title */
+        }
+    </style>
+</head>
+<body>
+    <h1>Bible at School</h1>
+    <button onclick="window.location.href='https://www.biblegateway.com/'">Go to BibleGateway</button>
+
+    <!-- Crosses positioned randomly -->
+    <div class="cross" style="top: 5%; left: 10%;"></div>
+    <div class="cross" style="top: 10%; left: 80%;"></div>
+    <div class="cross" style="top: 20%; left: 30%;"></div>
+    <div class="cross" style="top: 25%; left: 60%;"></div>
+    <div class="cross" style="top: 35%; left: 15%;"></div>
+    <div class="cross" style="top: 40%; left: 70%;"></div>
+    <div class="cross" style="top: 50%; left: 25%;"></div>
+    <div class="cross" style="top: 55%; left: 55%;"></div>
+    <div class="cross" style="top: 65%; left: 5%;"></div>
+    <div class="cross" style="top: 70%; left: 80%;"></div>
+    <div class="cross" style="top: 80%; left: 30%;"></div>
+    <div class="cross" style="top: 85%; left: 60%;"></div>
+    <div class="cross" style="top: 90%; left: 10%;"></div>
+    <div class="cross" style="top: 95%; left: 50%;"></div>
+    <div class="cross" style="top: 15%; left: 45%;"></div>
+    <div class="cross" style="top: 75%; left: 40%;"></div>
+
+</body>
+</html>
